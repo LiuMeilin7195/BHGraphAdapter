@@ -9,6 +9,7 @@ Adapter-based fine-tuning methods for Visual-Language Models (VLMs) have shown p
 ![overview](overview.png)
 
 ## Framwork of BHGraphAdapter
+![model](model.pdf)
 
 ### Acknowledgement
 This repo benefits from [Tip-Adapter](https://github.com/gaopengcuhk/Tip-Adapter), [CaFo](https://github.com/OpenGVLab/CaFo) and [CLIP](https://github.com/openai/CLIP). Thanks for their wonderful works.
