@@ -9,7 +9,33 @@ Adapter-based fine-tuning methods for Visual-Language Models (VLMs) have shown p
 ![overview](overview.png)
 
 ## Framwork of BHGraphAdapter
-![model](model.pdf)
+![model](model.png)
 
-### Acknowledgement
+## Results on 11 datasets
+![results](line.png)
+
+## Installation
+    conda create -n BHGraph python=3.7
+    conda activate BHGraph
+    
+    pip install -r requirements.txt
+    
+    # Install the according versions of torch and torchvision
+    conda install pytorch torchvision cudatoolkit
+
+## Training & Testing
+    CUDA_VISIBLE_DEVICES=0 python main_imagenet.py --config configs/imagenet/16shot.yaml
+
+## Citation
+If you find this project useful, please feel free to leave a star and cite our paper:
+```
+@article{BHGraphAdapter,
+  author={Wang, Xixi and Liu, Meilin and Jiang, Bo and Tang, Jin and Luo, Bin},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={BHGraphAdapter: Parameter-Efficient VLMs Tuning Meets Hyper-Graph Learning}, 
+  year={2026}
+}
+```
+
+## Acknowledgements
 This repo benefits from [Tip-Adapter](https://github.com/gaopengcuhk/Tip-Adapter), [CaFo](https://github.com/OpenGVLab/CaFo) and [CLIP](https://github.com/openai/CLIP). Thanks for their wonderful works.
